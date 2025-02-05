@@ -109,11 +109,8 @@ out = su;
 
 if print==1
     if timeout~=1
-        printsudoku(su,['sudoku_' id '_solved.txt'])
+        printsudoku(su,['sudoku_' id '_' num2str(step) '.txt'])
     else
         printsudoku(su,['sudoku_' id '_failed.txt'])
     end
 end
-
-
-            
